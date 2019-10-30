@@ -5,10 +5,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@guins/use-simple-carousel": "link:..",
+    "gsap": "^2.1.3",
     "react": "link:../node_modules/react",
     "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1",
-    "@guins/use-simple-carousel": "link:.."
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,91 @@
+.SimpleCarousel {
+  padding: 10px;
+  overflow: hidden
+}
+.SimpleCarousel_controls {
+  margin: 10px 0
+}
+.SimpleCarousel_controlBtn {
+  display: inline-block;
+  cursor: pointer
+}
+.SimpleCarousel_controlBtn + .SimpleCarousel_controlBtn::before {
+  content: '–';
+  display: inline-block;
+  margin: 0 10px
+}
+.SimpleCarousel_controlBtn.is-disabled {
+  text-decoration: line-through;
+  cursor: default;
+  pointer-events: none
+}
+.SimpleCarousel_nav {
+  margin: 10px 0;
+  list-style: none;
+}
+.SimpleCarousel_navItem {
+  display: inline-block;
+  cursor: pointer
+}
+.SimpleCarousel_navItem + .SimpleCarousel_navItem::before {
+  content: '•';
+  display: inline-block;
+  margin: 0 10px;
+}
+.SimpleCarousel_navItem.is-active {
+  cursor: default;
+  pointer-events: none;
+  opacity: .5
+}
+.SimpleCarousel_navItem.is-disabled {
+  text-decoration: line-through;
+  cursor: default;
+  pointer-events: none
+}
+.SimpleCarousel_slidesContainer {
+  position: relative;
+  min-height: 200px
+}
+.SimpleCarousel_slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.SimpleCarousel_slide:not(:first-child) {
+  opacity: 0;
+  visibility: none
+}
+.SimpleCarousel_slide:nth-child(3n+1) {
+  min-height: 200px;
+  background-color: #ffb6c1
+}
+.SimpleCarousel_slide:nth-child(3n+2) {
+  min-height: 100px;
+  background-color: #20b2aa
+}
+.SimpleCarousel_slide:nth-child(3n+3) {
+  min-height: 150px;
+  background-color: #d2691e
+}

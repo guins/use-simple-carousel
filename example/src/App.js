@@ -1,12 +1,20 @@
 import React from 'react'
 
-import { useMyHook } from '@guins/use-simple-carousel'
+import {SimpleCarousel} from './components/simpleCarousel/SimpleCarousel'
 
 const App = () => {
-  const example = useMyHook()
   return (
     <div>
-      {example}
+      <SimpleCarousel
+        items={['slide 1', 'slide 2', 'slide 3', 'slide 4', 'slide 5'].map((item, index) => {
+          return <div
+            className={`slide slide-${index}`}
+            key={index}
+          >
+            {item}
+          </div>
+        })}
+      />
     </div>
   )
 }
