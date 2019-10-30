@@ -12,7 +12,7 @@ npm install --save @guins/use-simple-carousel
 
 ## Usage
 
-See complete examples in [example/src/index.js](./example/src/index.js)
+See complete examples [here](./example/src/App.js)
 
 ```tsx
 import * as React from 'react'
