@@ -1,6 +1,6 @@
 {
   "name": "@guins/use-simple-carousel",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple Carousel React Hook - Manage the state of sequential elements being associated as carousel without any markup constraint",
   "author": "guins",
   "license": "MIT",
