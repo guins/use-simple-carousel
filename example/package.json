@@ -1,0 +1,25 @@
+{
+  "name": "@guins/use-simple-carousel-example",
+  "homepage": "https://guins.github.io/@guins/use-simple-carousel",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "link:../node_modules/react",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1",
+    "@guins/use-simple-carousel": "link:.."
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

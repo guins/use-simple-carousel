@@ -1,0 +1,8 @@
+{
+  "short_name": "@guins/use-simple-carousel",
+  "name": "@guins/use-simple-carousel",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
