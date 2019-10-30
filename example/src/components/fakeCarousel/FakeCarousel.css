@@ -1,0 +1,18 @@
+.MyCarousel {
+}
+
+.MyCarousel_output {
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.MyCarousel_controls {
+  margin: 20px 0;
+}
+
+.MyCarousel_btn {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}

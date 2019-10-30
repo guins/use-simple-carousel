@@ -12,18 +12,30 @@ npm install --save @guins/use-simple-carousel
 
 ## Usage
 
+See complete examples in [example/src/index.js](./example/src/index.js)
+
 ```tsx
 import * as React from 'react'
+import { useEffect } from 'react'
 
-import { useMyHook } from '@guins/use-simple-carousel'
+import { useSimpleCarousel } from '@guins/use-simple-carousel'
 
-const Example = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
+export function FakeCarousel() {
+  const itemsLength = 5 // number of items in your carousel
+  const autoPlayInterval = 1000 // interval in milliseconds (no autoPlay if 0) [default = 0]
+  const initialIndex = 0 // initial carousel index [default = 0]
+  const {carouselState, next, prev, goTo, onTransitionComplete} = useSimpleCarousel(itemsLength, autoPlayInterval, initialIndex)
+
+  useEffect(() => {
+    console.log('didUpdate', carouselState)
+
+    if(carouselState.isTransitioning) {
+      // custom transition here (don't forget to call `onTransitionComplete` callback after)
+      onTransitionComplete()
+    }
+  }, [carouselState, onTransitionComplete])
+
+  return null
 }
 ```
 
