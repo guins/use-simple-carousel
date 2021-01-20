@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "@guins/use-simple-carousel": "link:..",
-    "gsap": "^2.1.3",
+    "gsap": "^3.6.0",
     "react": "link:../node_modules/react",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.0.1"
